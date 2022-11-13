@@ -1,0 +1,26 @@
+.item_list {
+  display: flex;
+  gap: 30px;
+}
+.back_square {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 5px 5px 5px darkgrey;
+}
+.item_list img {
+  width: 120px;
+  position: absolute;
+  margin-right: 20px;
+  translate: -50% -20%;
+}
+
+.item {
+  text-align: center;
+}
+
+.item h3,
+.item hr,
+.item p {
+  margin-top: -40px;
+}
