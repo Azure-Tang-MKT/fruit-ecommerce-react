@@ -1,0 +1,17 @@
+.item_specs {
+  display: flex;
+  flex-direction: row;
+}
+
+.item_specs img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.text_specs {
+  padding-left: 30px;
+}
+
+.seller_store {
+  display: flex;
+}

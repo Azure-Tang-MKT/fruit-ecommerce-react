@@ -1,8 +1,10 @@
 .nav_bar {
+  margin: 10px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav_bar ul {
   display: flex;
   flex-direction: row;

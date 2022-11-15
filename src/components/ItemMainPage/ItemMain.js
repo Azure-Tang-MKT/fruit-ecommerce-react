@@ -3,6 +3,7 @@ import "./ItemMain.scss";
 import { Link } from "react-router-dom";
 
 export const Fruit = ({ item }) => {
+  console.log(item);
   return (
     <Link to={`/items/${item.id}`}>
       <div className="item">
@@ -18,7 +19,7 @@ export const Fruit = ({ item }) => {
 
 function ItemMain({ items }) {
   return (
-    <div>
+    <div className="main_page">
       <p>Fruit emporium sells the finest fruits from this world and beyond.</p>
       <h2>Browse items:</h2>
       <div className="item_list">
