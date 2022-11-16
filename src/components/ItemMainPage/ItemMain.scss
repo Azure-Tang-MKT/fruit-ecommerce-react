@@ -1,8 +1,9 @@
 .main_page {
-  margin: 10px 5%;
+  margin: 20px 5%;
 }
+
 .item_list {
-  margin-top: 50px;
+  padding-top: 30px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -10,13 +11,15 @@
   row-gap: 100px;
 }
 .back_square {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   background-color: white;
   box-shadow: 0 0 20px grey;
+  border-radius: 6px;
 }
+
 .item_list img {
-  width: 120px;
+  width: 140px;
   position: absolute;
   margin-right: 20px;
   translate: -50% -20%;
@@ -26,8 +29,18 @@
   text-align: center;
 }
 
-.item h3,
-.item hr,
-.item p {
-  margin-top: -40px;
+.info_text {
+  margin-top: -110px;
+  color: black;
+}
+.item_list a {
+  text-decoration: none;
+}
+
+.item hr {
+  height: 2px;
+  color: lightgrey;
+  background-color: lightgrey;
+  border-width: 0;
+  width: 50%;
 }

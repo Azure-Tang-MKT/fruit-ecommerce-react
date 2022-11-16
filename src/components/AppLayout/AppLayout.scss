@@ -13,11 +13,12 @@
   justify-content: right;
 }
 
-.nav_bar a:link {
+.nav_bar a {
   color: black;
   text-decoration: none;
 }
 
-.nav_bar a:visited {
+.nav_bar a:active,
+.nav_bar a:hover {
   color: red;
 }

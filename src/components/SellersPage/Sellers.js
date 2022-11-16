@@ -6,7 +6,7 @@ export const Seller = ({ seller }) => {
   return (
     <Link to={`/sellers/${seller.id}`}>
       <div className="seller_each">
-        <h2>{seller.id}</h2>
+        <h2>{seller.id.toUpperCase()}</h2>
         <img src={seller.avatarSrc} />
         <p>{seller.description}</p>
       </div>

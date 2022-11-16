@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .seller_list img {
@@ -10,4 +11,13 @@
 
 .seller_each {
   padding: 5px 5%;
+}
+
+.seller_list a {
+  text-decoration: none;
+}
+
+.seller_list h2,
+.seller_list p {
+  color: black;
 }

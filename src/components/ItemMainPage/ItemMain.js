@@ -9,9 +9,11 @@ export const Fruit = ({ item }) => {
       <div className="item">
         <img src={item.imageSrc}></img>
         <div className="back_square"></div>
-        <h3>{item.name}</h3>
-        <hr />
-        <p>{item.latinName}</p>
+        <div className="info_text">
+          <h3>{item.name}</h3>
+          <hr />
+          <p>{item.latinName}</p>
+        </div>
       </div>
     </Link>
   );

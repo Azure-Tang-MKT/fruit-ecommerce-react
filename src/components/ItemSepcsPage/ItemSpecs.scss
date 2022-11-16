@@ -1,11 +1,24 @@
 .item_specs {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 28px;
 }
 
 .item_specs img {
   width: 50%;
   border-radius: 20px;
+}
+
+.text_specs button {
+  background-color: blue;
+  color: white;
+  border-radius: 6px;
+  border: 1px blue;
+  height: 36px;
+  width: 180px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .text_specs {

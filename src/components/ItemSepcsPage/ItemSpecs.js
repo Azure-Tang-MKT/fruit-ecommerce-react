@@ -5,8 +5,7 @@ import "./ItemSpecs.scss";
 
 const ItemSpecs = ({ items }) => {
   const { idItem } = useParams();
-  console.log(idItem);
-  const item = items.find((el) => (el.id = idItem));
+  const item = items.find((el) => el.id === idItem);
   return (
     <div className="item_specs">
       <img src={item.imageSrc}></img>
@@ -15,7 +14,9 @@ const ItemSpecs = ({ items }) => {
         <p>{item.latinName}</p>
         <p>{item.description}</p>
         <p>Product of {item.countryOfOrigin}</p>
-        <button>${item.price} - Buy Now</button>
+        <button>
+          {(item.quantity = 0 ? `Sold Out` : `$ ${item.price} - Buy Now`)}
+        </button>
         <div className="seller_store">
           <div>
             <image src="sellers.avatarSrc"></image>

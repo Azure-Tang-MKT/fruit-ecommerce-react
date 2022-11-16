@@ -1,30 +1,18 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./SellerSpecs.scss";
+import { Fruit } from "../ItemMainPage/ItemMain";
 
-export const Fruit = ({ item }) => {
-  return (
-    <div className="item">
-      <img src={item.imageSrc}></img>
-      <div className="back_square"></div>
-      <h3>{item.name}</h3>
-      <hr />
-      <p>{item.latinName}</p>
-    </div>
-  );
-};
-
-const SellerSpecs = (items) => {
+const SellerSpecs = ({ items }) => {
   const { sellerid } = useParams();
+  console.log(typeof sellerid);
+  const filterid = items.filter((item) => item.sellerId == sellerid);
+
   return (
-    <div className="seller_page">
-      Book {sellerid}
-      <div>
-        {items.filter((item) => {
-          item.sellerid = sellerid;
-          return <Fruit item={item} />;
-        })}
-      </div>
+    <div className="item_list">
+      {filterid.map((item) => {
+        return <Fruit key={item.id} item={item} />;
+      })}
     </div>
   );
 };

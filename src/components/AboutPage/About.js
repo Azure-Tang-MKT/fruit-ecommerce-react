@@ -1,8 +1,9 @@
 import React from "react";
+import "./About.scss";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <p>
         Fruit emporium is founded on a very simple principle: Fruit is good. We
         carry the finest selection of produce from around the world, from tart
